@@ -2,7 +2,7 @@
     margin: 0;
     padding:0;
     font-family: Montserrat,popins, serif;
- 
+    border: 2px solid red;
 }
 
 
@@ -126,6 +126,9 @@ nav{
     margin: 40px auto; 
 }
 
+
+/* This is the white square that contains my greeting, intro and my professional experience */
+
 .intro-square {
     width: 50%;
     display: flex;
@@ -146,7 +149,7 @@ nav{
 .buttons {
     display: flex; 
     justify-content: left; 
-    gap: 30px;
+    gap: 20px;
 }
 
 .resume-button {
@@ -182,7 +185,7 @@ nav{
     align-items: center;
     justify-content: center;
     font-weight: light;
-    border: 2px solid #007BFF;
+    border: 2px solid black;
     border-radius: 90px;
     transition: background-color 0.1s, transform 0.1s; 
     text-decoration: none;
@@ -191,18 +194,91 @@ nav{
 .projects-button:hover {
     background-color: #007BFF;
     color: white;
+    border-color: #007BFF;
 }
 
 .intro {
     font-family: "Poppins", serif;
     font-weight: 400;
-    font-style: normal;   
+    font-style: normal;  
+    padding-bottom: 30px; 
 }
 .description {
     font-family: "Poppins", serif;
-    font-weight: 200;
-    font-size: 18px;
+    font-weight: 240;
+    font-size: 17px;
     font-style: normal;
+    padding-top: 40px;
+    text-align:justify;
 }
 
 
+/* Year and My Name */
+
+.powered-by {
+    margin-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+
+
+/* This is the resume page */
+
+.resume-container {
+    background: rgba(230, 218, 206, 1);
+    padding-top: 20px; 
+  }
+  .resume-page-name {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 30px;
+   
+  }
+  .resume-page-name ul {
+    text-align: center; 
+  }
+  .resume-page-name li {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .resume-page-name li::before {
+    content: '';                 
+    position: absolute;         
+    left: -20%;                    
+    top: 50%;                    
+    transform: translateY(-50%); 
+    width: 18px;                
+    height: 18px;                
+    background-color: blue;     
+    text-align: center;
+  }
+
+.education-label {
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+.education-box-header {
+    display: flex;
+}
+.education-box {
+    width: 33%;
+}
+  .education-info-containers { 
+    border-radius: 10px;              
+    background-color:white;
+    display: flex;
+  }
+  .box-title {
+    font-size: 12px;
+    font-style: bold;
+   
+  }
+  .box-subtitle {
+    color: blue;
+    font-size: 18px;
+  }
+  .description-subtitle {
+    
+  }
