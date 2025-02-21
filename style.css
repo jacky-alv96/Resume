@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding:0;
-    font-family: Montserrat,popins, serif;
-   
+    font-family: Montserrat,popins, serif;  
 }
 
 
@@ -56,7 +55,7 @@ nav{
     width: 40%;
     height: 700px;
     background: rgba(230, 218, 206, 1);
-    margin-left:20px;
+    border-radius: 10px;
 } 
 .white-square {
     width: 60%;
@@ -77,19 +76,18 @@ nav{
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    border: 5px solid orange;
+    display: flex;  
 }
 .picture-square {
     width: 50%;
     height: 500px;
+    border-radius: 10px;
     background: #F4ECE6;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     align-items:center;
-    padding-top:30px;
-    border: 4px solid green;
+    padding-top:30px;  
 }
 .picture-square img{
     width: 45%;
@@ -137,7 +135,6 @@ nav{
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    border: 4px solid red;
     text-align: left;
     padding: 0 20px;
     
@@ -233,20 +230,21 @@ nav{
     background: rgba(230, 218, 206, 1);
     padding-top: 20px;
 
-  }
+}
   .resume-page-name {
     list-style: none;
     text-align: center;
     padding-bottom: 30px;
+    padding-top: 40px;
    
-  }
+}
   .resume-page-name ul {
     text-align: center; 
-  }
+}
   .resume-page-name li {
     font-size: 32px;
     font-weight: bold;
-  }
+}
   .resume-page-name li::before {
     content: '';                 
     position: absolute;         
@@ -257,12 +255,19 @@ nav{
     height: 18px;                
     background-color: blue;     
     text-align: center;
-  }
+}
+
+
 
 .label {
-    padding-left: 30px;
+    padding-left: 60px;
     padding-bottom: 50px;
-    padding-top: 40px;
+    padding-top: 20px;
+
+
+
+/* These are the containers for education */
+
 }
 .education-box-header {
     display: flex;
@@ -274,13 +279,15 @@ nav{
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 } 
 .info-containers { 
     border-radius: 10px;              
     background-color:rgba(230, 218, 206, 1);
     display: flex;
     justify-content: space-evenly;  
+    padding-bottom: 60px;
+
 }
 .education-box-header {
     background-color: white;
@@ -288,7 +295,7 @@ nav{
     text-align: center;
     justify-content:flex-start;
     gap: 20px;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .box-title {
     font-size: 12px;
@@ -302,9 +309,20 @@ nav{
     font-style: semibold;
 }
 .box-description {
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.box-description p {
+    padding-bottom: 10px;
+}
+.box-description li {
+    padding-bottom: 12px;
     padding-left: 10px;
 }
+
+
+/* these are the containers for experience */
 
 
 .job-box {
@@ -314,8 +332,8 @@ nav{
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 50px;
-}
+    padding-bottom: 25px; 
+} 
 .job-box-header {
     background-color: white;
     border-radius: 15px;
@@ -324,8 +342,36 @@ nav{
     padding-left: 10px;
 }
 .box-title p {
-   font-size: 16px;
+   font-size: 17px;
    padding-top: 10px;
+   font-weight: 500;
+}
+.hidden-box {
+    width: 28%;
+    padding: 10px 10px;
+    background: transparent;
 }
 
 
+/* This is the skills container */
+
+.professional-skills {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    padding: 10px 10px;
+    width: 28%;
+}
+.skills {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    width: 28%;
+    padding: 20px 20px;
+    flex-direction: column;
+}
+.skills li {
+    padding-bottom: 15px;
+    white-space: nowrap;
+}
