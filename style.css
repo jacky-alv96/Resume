@@ -2,8 +2,10 @@
     margin: 0;
     padding:0;
     font-family: Montserrat,popins, serif;
-    border: 2px solid red;
+   
 }
+
+
 
 
 /* this is my header and nav links */
@@ -34,7 +36,7 @@ nav{
    content: "";
    width: 0%;
    height: 2px;
-   background: rgb(230, 218, 206);
+   background: #007BFF;
    display: block;
    margin: auto;
    transition: 0.5s;
@@ -227,8 +229,10 @@ nav{
 /* This is the resume page */
 
 .resume-container {
+
     background: rgba(230, 218, 206, 1);
-    padding-top: 20px; 
+    padding-top: 20px;
+
   }
   .resume-page-name {
     list-style: none;
@@ -255,30 +259,73 @@ nav{
     text-align: center;
   }
 
-.education-label {
+.label {
     padding-left: 30px;
     padding-bottom: 50px;
+    padding-top: 40px;
 }
 .education-box-header {
     display: flex;
 }
 .education-box {
-    width: 33%;
-}
-  .education-info-containers { 
-    border-radius: 10px;              
-    background-color:white;
+    width: 28%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px 10px;
     display: flex;
-  }
-  .box-title {
+    flex-direction: column;
+    padding-bottom: 50px;
+} 
+.info-containers { 
+    border-radius: 10px;              
+    background-color:rgba(230, 218, 206, 1);
+    display: flex;
+    justify-content: space-evenly;  
+}
+.education-box-header {
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    justify-content:flex-start;
+    gap: 20px;
+    padding-left: 10px;
+}
+.box-title {
     font-size: 12px;
-    font-style: bold;
-   
-  }
-  .box-subtitle {
+    padding-top: 10px;    
+}
+.box-year {
     color: blue;
+    font-weight: bold;
     font-size: 18px;
-  }
-  .description-subtitle {
-    
-  }
+    padding-top: 10px;
+    font-style: semibold;
+}
+.box-description {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+.job-box {
+    width: 28%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.job-box-header {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    padding-left: 10px;
+}
+.box-title p {
+   font-size: 16px;
+   padding-top: 10px;
+}
+
+
