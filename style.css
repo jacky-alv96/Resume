@@ -55,7 +55,6 @@ nav{
     width: 40%;
     height: 700px;
     background: rgba(230, 218, 206, 1);
-    border-radius: 10px;
 } 
 .white-square {
     width: 60%;
@@ -76,18 +75,21 @@ nav{
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    display: flex;  
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;  
 }
 .picture-square {
     width: 50%;
     height: 500px;
-    border-radius: 10px;
     background: #F4ECE6;
     display: flex;
+    padding-top: 25px;
     flex-direction: column;
-    justify-content:flex-start;
+    
     align-items:center;
-    padding-top:30px;  
+    
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3); 
 }
 .picture-square img{
     width: 45%;
@@ -101,14 +103,13 @@ nav{
     font-family: "Poppins", serif;
     font-weight: 500;
     font-size:30px;
-    margin-top:20px;
+    padding-top:20px;
     display:block; 
 }
 .name-and-title h2 {
     font-family: "Poppins", serif;
     font-weight: 500;
     font-size:30px;
-    margin-top:7px;
     display:block;
     
 }
@@ -117,14 +118,36 @@ nav{
     font-weight:300;
     font-size: 18px;
     margin-top:40px;
+    padding-bottom: 36px;
 }
 .small-line {
     width: 20%; 
     height: 2px; 
-    background-color:navy; 
+    background-color: #007BFF; 
     border: none; 
     margin: 40px auto; 
 }
+.icons {
+   background-color: white; 
+   width: 100%;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   justify-content: center; 
+   align-items: center;
+}
+.social-media-icons {
+    list-style-type: none;
+    display: flex; 
+    justify-content: center; 
+
+}  
+.social-media-icons li a {
+    font-size: 25px; /* Set the icon size */
+    color: black;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 
 
 /* This is the white square that contains my greeting, intro and my professional experience */
@@ -141,14 +164,17 @@ nav{
 }
 .greeting {
     font-family: "Poppins", serif;
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
+    padding-top: 30px;
+    padding-left: 12px;
 }
     
 .buttons {
     display: flex; 
     justify-content: left; 
     gap: 20px;
+    padding-left: 12px;
 }
 
 .resume-button {
@@ -178,7 +204,7 @@ nav{
     background-color: white;
     color: black;
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,17 +223,21 @@ nav{
 
 .intro {
     font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;  
-    padding-bottom: 30px; 
+    font-weight: 200;
+    font-style: normal; 
+    padding-top: 10px; 
+    padding-bottom: 28px; 
+    padding-left: 12px;
 }
-.description {
+.description p {
     font-family: "Poppins", serif;
     font-weight: 240;
     font-size: 17px;
     font-style: normal;
-    padding-top: 40px;
+    padding-top: 28px;
     text-align:justify;
+    padding-left: 12px;
+    justify-content: flex-end;
 }
 
 
@@ -240,9 +270,18 @@ nav{
     font-size: 15px;
     padding-bottom: 30px;
     padding-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
     text-align: center;
     justify-content: center;
     transform: translateX(80px);
+}
+.resume-square {
+    width: 20px; 
+    height: 20px;
+    background-color: #0050FF;
+    margin-top: 10px;
+    margin-right: 5px;
 }
 
 /* This is for the download resume button */
@@ -254,13 +293,13 @@ nav{
 }
 .download-resume a {
     margin-left: auto;
-    padding: 10px 10px;
-    background-color: #007BFF;
+    padding: 10px 12px;
+    background-color: #0050FF;
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 200;
-    border: 2px solid #007BFF;
+    border: 2px solid #0050FF;
     border-radius: 25px;
     transition: background-color 0.1s, transform 0.1s; 
     text-decoration: none;  
@@ -291,6 +330,7 @@ nav{
     display: flex;
     flex-direction: column;
     padding-bottom: 25px;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
 } 
 .info-containers { 
     border-radius: 10px;              
@@ -312,7 +352,7 @@ nav{
     padding-top: 10px;    
 }
 .box-year {
-    color: blue;
+    color: #0050FF;
     font-weight: bold;
     font-size: 18px;
     padding-top: 10px;
@@ -346,6 +386,7 @@ nav{
     display: flex;
     flex-direction: column;
     padding-bottom: 25px; 
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
 } 
 .job-box-header {
     background-color: white;
@@ -368,14 +409,16 @@ nav{
 
 
 /* This is the skills container */
-.skills-box {
+.skills-language-box {
     background-color: white;
     border-radius: 15px;
     width: 28%; 
     padding-top: 20px;
     padding-bottom: 20px;  
     padding-left: 15px;
-    
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
+    font-family: "Poppins", serif;
+    font-size: 16px;
 }
 .skills ul {
     padding-left: 30px;
@@ -386,5 +429,74 @@ nav{
     padding-bottom: 12px;
 }
 
+/* This is the Projects Page */
 
+
+.projects-background-container {
+    background: rgba(230, 218, 206, 1);
+    padding-top: 20px;
+}
+.projects-page-name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.page-name-inner-container {
+    font-size: 15px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    justify-content:center;   
+}
+.projects-square {
+    width: 20px; 
+    height: 20px;
+    background-color: #0050FF;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* This is every project container */
+
+.project-containers {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-evenly;  
+}
+.projects-container-inner {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.project-title {
+    padding-top: 20px;
+}
+.project-box {
+    display: flex;
+    background-color: white;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);   
+}
+.project-info { 
+    width: 60%;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.project-picture {
+    width: 50%;
+    background-color: black;
+    justify-content:space-between;   
+}
+.project-description {
+   
+    padding: 20px 20px;
+    text-align:justify;
+    
+}
 
