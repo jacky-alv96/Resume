@@ -65,7 +65,6 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    border: 2px solid blue;
 }
 
 
@@ -153,21 +152,18 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: right;
     padding: 0 20px;
 }
 .greeting {
     font-family: "Poppins", serif;
     font-weight: 800;
     font-style: normal;
-    padding-top: 30px;
-    padding-left: 12px;
-}
-    
+    padding-top: 30px; 
+    padding-left: 12px; 
+}   
 .buttons {
     display: flex; 
-    justify-content: left; 
-    gap: 20px;
+    gap: 20px;   
     padding-left: 12px;
 }
 
@@ -221,7 +217,7 @@ nav{
     font-style: normal; 
     padding-top: 10px; 
     padding-bottom: 28px; 
-    padding-left: 12px;
+    padding-left: 12px; 
 }
 .description p {
     font-family: "Poppins", serif;
@@ -245,32 +241,28 @@ nav{
     display: flex;
     flex-direction:flex-end;
     justify-content: space-between;
-    border: 2px solid green;
     padding: 20px 20px;
 }
-.powered-by {
-    border: 2px solid blue;
-}
+
 .contact-info-square {
-    border: 2px solid red;
     width: 50%;
     display: column;
     justify-content: center;
     align-items: center;
 }
 .contacts {
-    border: 2px solid pink; 
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;       
 } 
 .contacts p {
-    padding-left: 60px;
+    font-weight: 600;
+    padding-left: 70px;
 }
 .email-social {
-    border: 2px solid black;
     display: flex;
+    padding-top: 15px;  
     justify-content: space-around;    
 }
 .email-social ul {
@@ -279,7 +271,7 @@ nav{
     gap: 30px;    
 }
 .email-social li i {
-    font-size: 25px;
+    font-size: 20px;
     color: black;
 }
 
