@@ -3,75 +3,6 @@
     padding:0;
     font-family: Montserrat,popins, serif;  
 } 
-
-
-
-/* this is my header and nav links */
-
-/* .header-container {
-    border: 2px solid purple;
-}
-.header {
-    width:100%;
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    align-items: flex-start;
-    font-family:"Poppins", serif;
-    border: 2px solid blue;
-}
-.heading {
-    width: 50%;
-    display: flex;
-    font-size: 16px;
-    border: 2px solid yellow;
-    padding-left: 40px;
-    gap: 10px;
-}
-.square {
-    width: 20px; 
-    height: 20px;
-    background-color: #0050FF;   
-}
-.name {
-   font-weight: 600; 
-   font-size: 18px;
-}
-
-.nav-links{
-    width: 50%;
-    display: flex;
-    padding-right: 20px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    justify-content: end;
-}
-.nav-links li{
-    list-style: none;
-    padding-right: 40px;
-}
-.nav-links li a{
-   color: #000000;
-   text-decoration: none;
-   font-size: 16px; 
-}
-.nav-links li::after{
-   content: "";
-   width: 0%;
-   height: 2px;
-   background: #007BFF;
-   display: block;
-   margin: auto;
-   transition: 0.5s;
-}
-.nav-links li:hover::after{
-    width: 100%;
-} */
-/* delete until here once desktop and mobile have been set up */
-
-
-/* This is my two background squares */
-
 /* MOBILE */
 /* @media (max-width: 768px) {
     .mobile {
@@ -88,6 +19,8 @@
         justify-content: center;
     }
 } */
+
+
 /* DESKTOP */
 @media (min-width: 769px) {
     .square-containers { 
@@ -143,7 +76,7 @@
         font-weight:300;
         font-size: 18px;
         margin-top:40px;
-        padding-bottom: 36px;
+        padding-bottom: 90px;
     }
     .small-line {
         width: 15%; 
@@ -322,62 +255,6 @@
         color: black 
     }
 }
-    /* .footer-main {
-        display: flex;
-        justify-content: space-between;
-    }
-    .powered-by { 
-        width:40%;
-    }
-    .contact-info-square {
-        width: 40%;
-    }
-    .contacts {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;       
-    } 
-    .contacts p {
-        font-weight: 600;
-        padding-left: 70px;
-    }
-    .footer-second {
-        
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .empty-box {
-        padding-top: 20px;
-        width: 50%;
-        
-    }
-    .email-social {
-        width: 50%;
-        display: flex;
-        padding-top: 15px;  
-        justify-content: center;
-        border: 2px solid black;  
-    }
-    .email-footer {
-        margin-right: 40px;
-    
-    }
-    .email-social ul {
-        margin-left: 40px;
-        display: flex;
-        list-style: none;
-        gap: 30px;     
-    }
-    .email-social li i {
-        font-size: 20px;
-        color: black;
-    } */
-
-/* email and icons do not stay where they should when page is extended */
-
-
 
 
 
