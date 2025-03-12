@@ -14,22 +14,53 @@
 </head>
 
 <body>
-    <div class="header-container"> 
+            <!-- Mobile version -->
+     <div class="header-container mobile">
+        <nav>
+            <div class="header">
+                <div class="heading">
+                    <div class="decoration">
+                        <p class="square"></p>
+                    </div>
+                    <div class="name-title">
+                    <p class="name">Jacqueline Alvstad</p>
+                    <p>TECHNICAL SUPPORT SPECIALIST</p> 
+                    </div> 
+                </div>
+                <div class="menu" onClick="toggleMenu()">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>   
+                </div>
+                <div class="menu-overlay">
+                    <ul class="nav-links">
+                        <li><a href="index.html">ABOUT ME</a></li>
+                        <li><a href="resume.html">RESUME</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+     <!-- Desktop version -->
+     <div class="header-container desktop">
         <nav>
             <div class="header">
                 <div class="heading">
                     <div class="square"></div>
-                    <p>JACQUELINE ALVSTAD / </p>
-                    <p>TECHNICAL SUPPPORT SPECIALIST</p>
+                    <p>Jacqueline Alvstad / </p>
+                    <p>TECHNICAL SUPPORT SPECIALIST</p>  
                 </div>
                 <ul class="nav-links">
-                    <li> <a href="index.html">ABOUT ME</a></li>
-                    <li> <a href="resume.html">RESUME</a></li>
-                    <li> <a href="projects.html">PROJECTS</a></li>
+                    <li><a href="index.html">ABOUT ME</a></li>
+                    <li><a href="resume.html">RESUME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
                 </ul>
             </div>
         </nav>
     </div>
+
 
     <div class="projects-background-container">
         <div class="projects-page-name">
@@ -75,24 +106,50 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="powered-by">
-            <p>© 2025 Jacqueline Alvstad.</p>
-        </div>
-        <div class="contact-info-square">
-            <div class="contacts">
-                <p>Email</p>
-                <p>Follow</p>
+    <div class="footer desktop">
+
+        <div class="footer-parent">
+
+            <div class="footer-child">
+                <div class="powered-by">
+                    <p>© 2025 Jacqueline Alvstad.</p>
+                </div>
+
             </div>
-            <div class="email-social">
-                <p>spanishwithjacky@gmail.com</p>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/jacqueline-alvstad/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/jacky-alv96" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                </ul>
-            </div> 
+
+            <div class="footer-child">
+                    <div class="email-info">
+                        <p class="padding-bottom center">Email</p>
+                        <p>spanishwithjacky@gmail.com</p>
+                    </div>   
+            </div>
+
+            <div class="footer-child">
+                <div class="social-media">
+                    <p class="padding-bottom">Follow</p>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/jacqueline-alvstad/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/jacky-alv96" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+        function toggleMenu() {
+            const menuOverlay = document.querySelector('.menu-overlay');
+            // Check if the menu is currently visible
+            if (menuOverlay.style.height === '100%') {
+                // If visible, hide the menu
+                menuOverlay.style.height = '0';
+                menuOverlay.style.opacity = '0';
+            } else {
+                // If not visible, show the menu
+                menuOverlay.style.height = '100%';
+                menuOverlay.style.opacity = '1';
+            }
+        }     
+    </script>
 </body>
 
 </html>

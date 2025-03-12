@@ -260,7 +260,8 @@
     }
 }
 
-    /* Year and My Name */
+    /* DESKTOP */
+
      @media (min-width: 769px) {
 
     .desktop {
@@ -271,7 +272,7 @@
     }
     .footer  {
         width: 100%;
-        padding: 20px 20px;
+        padding: 30px 60px;
         font-size: 14px;
         justify-content: space-between;  
     }
@@ -286,7 +287,7 @@
         display: flex;
     }
     .footer-child:nth-child(1) {
-        width: 60%;  
+        width: 50%;  
     }
     .footer-child:nth-child(2) {
         width: 30%;
