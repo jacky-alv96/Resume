@@ -9,17 +9,15 @@
         display: block;
     }
     .header {
-        width:100%;
+        width: 100%;
+        display: flex;
         padding-top: 30px;
         padding-bottom: 30px;
-        align-items: flex-start;
         font-family:"Poppins", serif;
     }
     .heading {
         font-size: 15px;
         display: flex;
-        flex-wrap: nowrap;
-        width:75%;
         padding-left: 20px;
     }
     .heading p:first-of-type {
@@ -37,9 +35,9 @@
         background-color: #0050FF;  
     }
     .menu {
-        position: fixed;
+        position: sticky;
         top: 40px;
-        right: 40px;
+        right: 35px;
         width: 30px;
         height: 25px;
         display: flex;
@@ -47,6 +45,8 @@
         justify-content: space-between;
         cursor: pointer;
         z-index: 1001; 
+        margin-left: 100px !important;
+        
     }
     .burger-line:nth-child(1) {
         width: 20px;
@@ -147,7 +147,6 @@
        font-weight: 600; 
        font-size: 18px;
     }
-
     .nav-links{
         width: 50%;
         display: flex;
