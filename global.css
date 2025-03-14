@@ -3,8 +3,9 @@
     padding:0;
     font-family: Montserrat,popins, serif;  
 } 
-/* MOBILE */
-/* @media (max-width: 768px) {
+                            /* MOBILE */
+
+ @media (max-width: 768px) {
     .mobile {
         display: block;
     }
@@ -12,16 +13,197 @@
         display: none;
     }
     .square-containers {
-       border: 2px solid red;
-    }
-    .brown-square {
         width: 100%;
+        position: relative;
+    } 
+    .white-square {
+        height: 200px;
+        position: relative;
+        background: white;
         justify-content: center;
     }
-} */
+    .brown-square {
+        height: 430px;
+        background: rgba(230, 218, 206, 1);
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .division { 
+        height: 300px;
+        background-color: rgba(230, 218, 206, 1);
+    }
+    .picture-square {
+        width:90%;
+        position: absolute;
+        top:27%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        background: #F4ECE6;
+        box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        justify-content: center;
+    }
+    .picture-square img {
+        width: 40%; 
+        border-radius: 50%;
+    }
+    .name-and-title {
+        text-align: center;
+        flex-direction: column;
+    }
+    .name-and-title h1 {
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-size:25px;
+        padding-top:20px;
+        display:block; 
+    }
+    .name-and-title h2 {
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-size:25px;
+        display:block; 
+    }
+    .small-line {
+        width: 50%; 
+        height: 2px; 
+        background-color: #0050FF; 
+        border: none; 
+        margin:auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .icons {
+        background-color: white; 
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        justify-content: center; 
+        align-items: center;
+    }
+    .social-media-icons {
+        list-style-type: none;
+        display: flex; 
+        justify-content: center; 
+    }
+    .social-media-icons li a {
+        font-size: 25px; /* Set the icon size */
+        color: black;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .buttons {
+        display: flex; 
+        gap: 20px; 
+        margin-bottom: 40px;  
+    }
+    .resume-button {
+        padding: 0 30px;
+        height: 35px;
+        background-color: #0050FF;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: light;
+        border: 2px solid #0050FF;
+        border-radius: 90px;
+        transition: background-color 0.1s, transform 0.1s; 
+        text-decoration: none;  
+    }
+    .resume-button:hover {
+        background-color: white;
+        color: black;
+    }
+    .projects-button {
+        padding: 0 25px;
+        height: 35px;
+        background-color: white;
+        color: black;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: light;
+        border: 2px solid black;
+        border-radius: 90px;
+        transition: background-color 0.1s, transform 0.1s; 
+        text-decoration: none;
+    }
+    .projects-button:hover {
+        background-color: #0050FF;
+        color: white;
+        border-color: #0050FF;
+    }
+    .greeting h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 50px;
+        padding-top: 20px;
+        font-style: normal; 
+    }   
+    .intro h2 {
+        font-family: "Poppins", serif;
+        font-weight: 300;
+        font-style: normal; 
+        padding-top: 10px; 
+        padding-bottom: 28px; 
+        
+    }
+    .description p {
+        font-family: "Poppins", serif;
+        font-weight: 240;
+        font-size: 15px;
+        text-align:justify;
+        padding-bottom: 40px;
+    }
+    .footer  {
+        padding: 20px 20px;
+        font-size: 12px;
+        justify-content: space-between; 
+    }
+    .footer-parent {
+        display: flex;
+    }
+    .footer-child {
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    .powered-by {
+        padding-top: 20px;
+    }
+    .footer-child .email-info p:first-of-type { 
+        font-weight: 600;
+    }
+    .footer-child .social-media p:first-of-type { 
+        font-weight: 600;
+        margin-left: 60px;
+    }
+    .social-media ul {
+        display: flex;
+        font-size: 20px;
+        list-style: none;
+        gap: 30px; 
+        justify-content: center;
+        margin-top: -5px;
+    }
+    .social-media li i {
+        color: black 
+    }
+    .padding-bottom {
+        padding-bottom: 10px;
+    }
+    }
+    
 
+                /* INDEX PAGE DESKTOP */
 
-/* DESKTOP */
 @media (min-width: 769px) {
     .square-containers { 
         display: flex;
@@ -34,21 +216,24 @@
         position: relative;
     } 
     .personal-info-container {
+        display: flex;
+        width: 800px;
         position: absolute;
         top:50%;
         left:50%;
         transform: translate(-50%, -50%);
-        display: flex;
-        width: 800px;
     }
     .picture-square {
         width: 50%;
         background: #F4ECE6;
         display: flex;
-        padding-top: 25px;
         flex-direction: column;
-        align-items:center;   
+        align-items:center;  
+        padding-top: 25px; 
         box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); 
+        position: relative;
+        overflow: hidden;
+
     }
     .picture-square img{
         width: 45%;
@@ -191,11 +376,12 @@
         padding-left: 12px;
         justify-content: flex-end;
     }
+    
 }
 
-    /* DESKTOP */
+    /* FOOTER DESKTOP */
 
-     @media (min-width: 769px) {
+    @media (min-width: 769px) {
 
     .desktop {
         display: block;
