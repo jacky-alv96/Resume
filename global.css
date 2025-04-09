@@ -3,6 +3,13 @@
     padding:0;
     font-family: Montserrat,popins, serif;  
 } 
+
+.resume-container { /* This is the whole background */
+    background: rgba(230, 218, 206, 1);
+    padding-top: 20px;
+    width: 100%;
+    padding-bottom: 40px;
+}
                             /* MOBILE */
 
  @media (max-width: 768px) {
@@ -199,8 +206,60 @@
     .padding-bottom {
         padding-bottom: 10px;
     }
-    }
+   
     
+                        /* RESUME PAGE MOBILE */
+    .resume-page-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding-top: 20px;
+    }
+    .resume-title {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .resume-square {
+        width: 18px;
+        height: 18px;
+        background-color: #0050FF;
+        margin-bottom: 4px;
+    }
+    .label {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    .label-title .download-button {
+        width: auto;
+        padding: 10px;
+    }
+    .download-resume a {
+        padding: 10px 20px;
+        background-color: #0050FF;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        border: 2px solid #0050FF;
+        border-radius: 25px;
+        transition: background-color 0.1s, color 0.1s, transform 0.1s; 
+        text-decoration: none;  
+        white-space: nowrap;
+    }
+    .download-resume a:hover {
+        background-color: white;
+        color: black;
+        border: 2px solid #0050FF;
+    }
+}
+
 
                 /* INDEX PAGE DESKTOP */
 
@@ -440,18 +499,11 @@
     .social-media li i {
         color: black 
     }
-}
-
 
 
     /* This is the resume page */
-
-    .resume-container { /* This is the whole background */
-        background: rgba(230, 218, 206, 1);
-        padding-top: 20px;
-        width: 100%;
-        padding-bottom: 40px;
-    }
+ /* resume-container style will be placed at the top as this styling will work for both desktop and mobile */
+    
     .resume-box {
         display: flex;
         padding: 10px;
@@ -706,4 +758,4 @@
     .half-width {
         width: 33%;
     }
-    
+}
