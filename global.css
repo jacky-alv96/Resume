@@ -4,8 +4,9 @@
     font-family: Montserrat,popins, serif;  
 } 
 
- /* RESUME PAGE */
-/* styles for both mobile and desktop */
+                     /* RESUME PAGE */
+                /* styles for both mobile and desktop */
+            
 .resume-container { /* This is the whole background */
     background: rgba(230, 218, 206, 1);
     padding-top: 40px;
@@ -62,10 +63,9 @@
 .education-box, .job-box {
     border-radius: 15px;
     background-color: white;
-    padding: 10px 10px;
+    padding: 15px 15px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 25px;
     box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
     position: relative;
@@ -110,6 +110,80 @@
     padding-bottom: 12px;
 }
 
+                 /* PROJECTS PAGE   */
+                /* styles for both mobile and desktop */
+
+.projects-container {
+    background: rgba(230, 218, 206, 1);
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.projects-page-name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.page-name-inner-container {
+    font-size: 15px;
+    padding-bottom: 80px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    justify-content:center;   
+    margin-top: 40px;
+}
+.projects-square {
+    width: 20px; 
+    height: 20px;
+    background-color: #0050FF;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.project-containers-section {
+    display: flex;
+    justify-content: space-evenly; 
+}
+.project-main-container {
+    background-color: white;
+    margin-bottom: 80px;
+    padding-bottom: 20px; 
+    border-radius: 15px; 
+    justify-content: space-evenly;
+}
+.project-description {
+    text-align: justify;
+    padding: 20px 50px;
+    line-height: 1.6;
+}
+.project-title h2 {
+    color: #0050FF;
+    padding-top: 40px; 
+    text-align: center;
+}
+.project-title p {
+    color: black;
+    font-weight: 300;
+    padding-top: 10px  
+}
+.project-text-container {
+    justify-content: center;
+    align-items: center;
+}
+.project-img-container {
+    width: 100%;
+    justify-content: center;
+}
+.project-img-container img {
+    width: 80%;  
+    height: 100%;
+    object-fit: cover;
+}
+.half-width {
+    width: 33%;
+}
+
 
 /* MOBILE */
 @media (max-width: 768px) {
@@ -119,6 +193,9 @@
     .desktop {
         display: none;
     }
+
+                 /* INDEX PAGE MOBILE */
+                 
     .square-containers {
         width: 100%;
         position: relative;
@@ -327,6 +404,23 @@
     .resume-container .job-box {
         width: 90%;
         margin: 0 auto;
+    }
+    .job-box-header {
+        padding-left: 15px;
+    }
+    .box-title p {
+        font-size: 16px;
+        padding: 10px 0px 10px 0px;
+    }
+
+                 /* PROJECTS PAGE MOBILE */
+    .project-main-container {
+        width: 90%;
+    }
+    .project-containers-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -588,7 +682,7 @@
         justify-content: space-evenly;  
         padding-bottom: 60px;  
     }
-    .box-header {
+    .education-box-header {
         background-color: white;
         border-radius: 15px;
         text-align: center;
@@ -622,9 +716,7 @@
         padding-bottom: 12px;
     }
 
-
     /* these are the containers for experience */
-
 
     .job-box {
         width: 28%;
@@ -655,84 +747,9 @@
         background: transparent;
     }
 
-    /* This is the Projects Page */
-
-
-    .projects-background-container {
-        background: rgba(230, 218, 206, 1);
-        padding-top: 20px;
-        padding-bottom: 40px;
-    }
-    .projects-page-name {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-    }
-    .page-name-inner-container {
-        font-size: 15px;
-        padding-bottom: 80px;
-        padding-top: 30px;
-        display: flex;
-        flex-direction: row-reverse;
-        text-align: center;
-        justify-content:center;   
-        margin-top: 40px;
-    }
-    .projects-square {
-        width: 20px; 
-        height: 20px;
-        background-color: #0050FF;
-        margin-top: 10px;
-        margin-right: 5px;
-    }
-
-    /* This is every project container */
-
-    .project-containers-section {
-        display: flex;
-        justify-content: center;
-        gap: 80px;
-        
-    }
+    /* This is the Projects Page desktop */
     .project-main-container {
-        background-color: white;
-        margin-bottom: 80px;
-        padding-bottom: 20px; 
-        border-radius: 15px; 
-        justify-content: center;
-        align-items: center;
-    }
-    .project-description {
-        text-align: justify;
-        padding: 20px 50px;
-        line-height: 1.6;
-    }
-    .project-title h2 {
-        color: #0050FF;
-        padding-top: 40px; 
-        text-align: center;
-    }
-    .project-title p {
-        color: black;
-        font-weight: 300;
-        padding-top: 10px  
-    }
-    .project-text-container {
-        justify-content: center;
-        align-items: center;
-    }
-    .project-img-container {
-        width: 100%;
-        justify-content: center;
-    }
-    .project-img-container img {
-        width: 80%;  
-        height: 100%;
-        object-fit: cover;
-    }
-    .half-width {
-        width: 33%;
+        width: 35%;
     }
 }
 
