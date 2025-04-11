@@ -4,15 +4,120 @@
     font-family: Montserrat,popins, serif;  
 } 
 
+ /* RESUME PAGE */
+/* styles for both mobile and desktop */
 .resume-container { /* This is the whole background */
     background: rgba(230, 218, 206, 1);
-    padding-top: 20px;
+    padding-top: 40px;
     width: 100%;
     padding-bottom: 40px;
 }
-                            /* MOBILE */
+.resume-page-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+.resume-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+.resume-square {
+    width: 18px;
+    height: 18px;
+    background-color: #0050FF;
+    margin-bottom: 4px;
+}
+.label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+.label-title .download-button {
+    width: auto;
+    padding: 10px;
+}
+.download-resume a {
+    padding: 10px 20px;
+    background-color: #0050FF;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    border: 2px solid #0050FF;
+    border-radius: 25px;
+    transition: background-color 0.1s, color 0.1s, transform 0.1s; 
+    text-decoration: none;  
+    white-space: nowrap;
+}
+.download-resume a:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #0050FF;
+}
+.education-box-header {
+    display: flex;
+}
+.education-box, .job-box, .skills-language-box {
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    position: relative;
+} 
+.info-containers { 
+    border-radius: 10px;              
+    background-color:rgba(230, 218, 206, 1);
+    display: flex;
+    justify-content: space-evenly;  
+    padding-bottom: 60px;  
+}
+.education-box-header {
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    gap: 20px;
+    padding-left: 15px;
+}
+.box-title {
+    font-size: 12px;
+    padding-top: 10px;    
+}
+.box-year {
+    color: #0050FF;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10px;
+    font-style: semibold;
+}
+/* The box-description class is also being used in the experience section.*/
+.box-description {
+    padding-top: 20px;
+    padding-left: 15px;  /* Needed for padding on the education containers  description */
+    padding-right: 15px;
+    line-height: 1.6; 
+}
+.box-description ul {
+    padding-left: 15px;
+    line-height: 1.6;
+}
+.box-description li {
+    padding-bottom: 12px;
+}
 
- @media (max-width: 768px) {
+
+/* MOBILE */
+@media (max-width: 768px) {
     .mobile {
         display: block;
     }
@@ -209,7 +314,7 @@
    
     
                         /* RESUME PAGE MOBILE */
-    .resume-page-title {
+    /* .resume-page-title {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -257,13 +362,32 @@
         background-color: white;
         color: black;
         border: 2px solid #0050FF;
+    } */
+
+    /* Only layout-specific styles for mobile */
+    .resume-container .info-containers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    .resume-container .education-box,
+    .resume-container .job-box,
+    .resume-container .skills-language-box {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
-
-                /* INDEX PAGE DESKTOP */
-
+/* DESKTOP */
 @media (min-width: 769px) {
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
     .square-containers { 
         display: flex;
         position: relative;
@@ -435,75 +559,9 @@
         padding-left: 12px;
         justify-content: flex-end;
     }
-    
-}
-
-    /* FOOTER DESKTOP */
-
-    @media (min-width: 769px) {
-
-    .desktop {
-        display: block;
-    }
-    .mobile {
-        display: none;
-    }
-    .footer  {
-        width: 100%;
-        padding: 30px 60px;
-        font-size: 14px;
-        justify-content: space-between;  
-    }
-    .padding-bottom {
-        padding-bottom: 20px;
-    }
-    .footer-parent {
-        display: flex;
-        width: 100%;
-    }
-    .footer-child {
-        display: flex;
-    }
-    .footer-child:nth-child(1) {
-        width: 50%;  
-    }
-    .footer-child:nth-child(2) {
-        width: 30%;
-        justify-content: flex-end;
-    }
-    .footer-child .email-info p:first-of-type {
-        font-weight: 700;
-        margin-left: 80px;
-    }
-    .footer-child .social-media p:second-of {
-        font-weight: 700;
-        margin-left: 5px;
-    }
-    .footer-child:nth-child(3) {
-        margin-left: 20px;
-        width: 15%;
-        justify-content: flex-start;
-        padding-left: 40px; 
-    }
-    .footer-child .social-media p:first-of-type {
-        font-weight: 700;
-        margin-left: 5px;
-    }
-    .social-media ul {
-        display: flex;
-        font-size: 20px;
-        list-style: none;
-        gap: 30px; 
-        margin-top: -5px;
-    }
-    .social-media li i {
-        color: black 
-    }
 
 
-    /* This is the resume page */
- /* resume-container style will be placed at the top as this styling will work for both desktop and mobile */
-    
+                    /* STYLING FOR THE RESUME PAGE DESKTOP */
     .resume-box {
         display: flex;
         padding: 10px;
@@ -557,9 +615,6 @@
         color: black;
         border: 2px solid #0050FF;
     }
-
-
-
 
     .label {
         padding-left: 60px;
