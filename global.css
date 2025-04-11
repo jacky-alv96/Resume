@@ -75,7 +75,7 @@
     background-color:rgba(230, 218, 206, 1);
     display: flex;
     justify-content: space-evenly;  
-    padding-bottom: 60px;  
+    padding-bottom: 30px;  
 }
 .education-box-header {
     background-color: white;
@@ -321,7 +321,7 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        padding: 20px;
+        padding: 20px 20px 0px 20px;
     }
     .resume-container .education-box,
     .resume-container .job-box {
@@ -566,7 +566,7 @@
     }
     /* These are the containers for education */
 
-    .education-box-header {
+    .box-header {
         display: flex;
     }
     .education-box {
@@ -588,7 +588,7 @@
         justify-content: space-evenly;  
         padding-bottom: 60px;  
     }
-    .education-box-header {
+    .box-header {
         background-color: white;
         border-radius: 15px;
         text-align: center;
@@ -653,28 +653,6 @@
         width: 28%;
         padding: 10px 10px;
         background: transparent;
-    }
-
-
-    /* This is the skills container */
-    .skills-language-box {
-        background-color: white;
-        border-radius: 15px;
-        width: 28%; 
-        padding-top: 20px;
-        padding-bottom: 20px;  
-        padding-left: 15px;
-        box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
-        font-family: "Poppins", serif;
-        font-size: 16px;
-    }
-    .skills-language ul {
-        padding-left: 30px;
-        padding-right: 20px;
-        line-height: 1.6;
-    }
-    .skills-language li {
-        padding-bottom: 12px;
     }
 
     /* This is the Projects Page */
