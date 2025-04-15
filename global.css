@@ -117,12 +117,6 @@
     background: rgba(230, 218, 206, 1);
     padding-bottom: 40px;
 }
-.projects-page-name {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
 .page-name-inner-container {
     font-size: 15px;
     padding-bottom: 80px;
@@ -132,13 +126,6 @@
     text-align: center;
     justify-content:center;   
     margin-top: 40px;
-}
-.projects-square {
-    width: 20px; 
-    height: 20px;
-    background-color: #0050FF;
-    margin-top: 10px;
-    margin-right: 5px;
 }
 .project-containers-section {
     display: flex;
